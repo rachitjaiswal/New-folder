@@ -1,57 +1,66 @@
 .main-content {
-    flex: 1;
-    padding: 20px;
-    overflow-y: scroll;
-  }
-  
-  .post {
-    background: #fff;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .user {
-    display: flex;
-    align-items: center;
-  }
-  
-  .user-image {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-    
-  }
-  
-  .username {
-    font-weight: bold;
-  }
-  
-  .user-handle {
-    color: #888;
-  }
-  
-  .post-text {
-    margin: 10px 0;
-  }
-  
-  .read-more {
-    color: #2196f3;
-    cursor: pointer;
-  }
-  
-  .post-image {
-    width: 100%;
-    border-radius: 8px;
-    margin-top: 10px;
-  }
-  
-  .post-stats {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-    color: #888;
-  }
-  
+  padding: 20px;
+}
+
+.post {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.user-handle {
+  color: #888;
+}
+
+.post-text {
+  margin: 10px 0;
+}
+
+.read-more {
+  color: #8bc6b0;
+  cursor: pointer;
+}
+
+.post-image {
+  width: 100%;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.post-stats {
+  display: flex;
+  align-items: center;
+  font-size: 18px; /* Increase font size */
+  color: #555;
+  justify-content: flex-start; /* Align items to the left */
+}
+
+.post-stats span {
+  display: flex;
+  align-items: center;
+  margin-right: 12.5%; /* Reduce spacing between items by half */
+  font-weight: bold; /* Make text bold */
+}
+
+.icon {
+  margin-right: 5px; /* Adjust spacing between icon and text */
+}

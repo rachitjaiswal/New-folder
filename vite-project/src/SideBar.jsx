@@ -1,11 +1,11 @@
 import React from 'react';
-import './SideBar.css';
+import './Sidebar.css';
 
-function SideBar() {
+function Sidebar() {
   return (
-    <div className="SideBar">
-      <div className="logo">LOGO</div>
+    <div className="sidebar">
       <ul className="menu">
+        
         <li>Home</li>
         <li>Notifications</li>
         <li>Shop</li>
@@ -14,10 +14,14 @@ function SideBar() {
         <li>Subscription</li>
         <li>My Profile</li>
         <li>Settings</li>
+        <li className="logout">Log out</li>
       </ul>
-      <button className="logout">Log out</button>
+      <div className="footer">
+        <p>2022 logo name</p>
+        <p>Developed by Ivan Infotech</p>
+      </div>
     </div>
   );
 }
 
-export default SideBar;
+export default Sidebar;

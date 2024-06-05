@@ -1,15 +1,19 @@
 import React from 'react';
-import './App.css';
-import Sidebar from './SideBar';
+import Header from './Header';
+import Sidebar from './Sidebar';
 import MainContent from './MainContent';
-import ArtistList from './ArtistList';
+import RightSidebar from './RightSidebar';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Sidebar />
-      <MainContent />
-      <ArtistList />
+      <Header />
+      <div className="content">
+        <Sidebar />
+        <MainContent />
+        <RightSidebar />
+      </div>
     </div>
   );
 }

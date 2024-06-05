@@ -1,10 +1,38 @@
 .sidebar {
+    width: 200px;
+    padding: 20px;
+    background-color: #f8f8f8;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     height: 100vh;
   }
   
+  .menu {
+    list-style-type: none;
+    padding: 0;
+  }
+  
   .menu li {
+    margin: 15px 0;
     cursor: pointer;
+  }
+  
+  .menu .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .logout {
+    margin-top: auto;
+    color: #2196f3;
+    cursor: pointer;
+  }
+  
+  .footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #aaa;
   }
   

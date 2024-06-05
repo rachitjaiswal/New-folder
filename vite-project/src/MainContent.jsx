@@ -1,6 +1,10 @@
+// MainContent.js
 import React from 'react';
 import './MainContent.css';
 import { FaHeart, FaComment, FaShare } from 'react-icons/fa';
+import ProductCard from './ProductCard';
+import productImage1 from './assets/Image 39@2x.png'; // replace with actual path
+import productImage2 from './assets/Image 40@2x.png'; // replace with actual path
 
 function MainContent() {
   return (
@@ -41,7 +45,21 @@ function MainContent() {
           <span><FaShare className="icon" /> 7.2k</span>
         </div>
       </div>
-      {/* Repeat the post div for more posts */}
+      {/* Product Section */}
+      <div className="product-section">
+        <ProductCard 
+          image={productImage1} 
+          title="Modern Wall Decor Framed Painting" 
+          price="199.99" 
+          rating={5} 
+        />
+        <ProductCard 
+          image={productImage2} 
+          title="Modern Wall Decor Framed Painting" 
+          price="199.99" 
+          rating={5} 
+        />
+      </div>
     </div>
   );
 }
